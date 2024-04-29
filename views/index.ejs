@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Single Quote Generator</title>
+</head>
+<body>
+    
+    <section class="container">
+        <!-- <p>The Illustion of safety is always so much more deadly than your rise.</p> -->
+        <% if(locals.data) { %>
+            <p> <%= data.text %> </p>
+            <p> -<%= data.author %>
+        <%} %>
+        <form action="/" method="GET">
+            <button type="submit"> New Quote</button>
+        </form>
+    </section>
+    
+</body>
+</html>
